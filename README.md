@@ -1,16 +1,59 @@
-# React + Vite
+📊 Mood Tracker – React Application
+A sleek, intuitive application designed to help users track their daily emotional well-being and visualize long-term trends using interactive charts.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Key Features
+Daily Mood Logging: Easily log your daily emotional state with persistent storage.
 
-Currently, two official plugins are available:
+Trend Visualization: Beautiful chart displays to help you understand your mood patterns over time.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Persistent Storage: Integrated Local Storage to ensure your data remains safe even after a browser refresh.
 
-## React Compiler
+Modern State Management: Efficient data handling using React Hooks (useState, useEffect).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Responsive Design: A clean, mobile-friendly UI that works seamlessly across all devices.
 
-## Expanding the ESLint configuration
+🛠️ Tech Stack
+Frontend Library: React.js
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Language: JavaScript (ES6+)
+
+Data Visualization: Chart.js / Recharts (Choose your specific library)
+
+Styling: CSS3 / Tailwind CSS
+
+Storage: Web Storage API (LocalStorage)
+
+💻 Getting Started
+Follow these steps to get a local copy of the project up and running on your machine.
+
+1. Prerequisites
+Ensure you have Node.js and npm installed.
+
+Check Node version: node -v
+
+Check npm version: npm -v
+
+2. Installation
+Clone the repository and navigate into the project folder:
+
+Bash
+git clone https://github.com/your-username/mood-tracker.git
+cd mood-tracker
+3. Install Dependencies
+Install all the required packages:
+
+Bash
+npm install
+4. Run the Development Server
+Launch the application locally:
+
+Bash
+npm run dev
+Once the command executes, open your browser and navigate to the local URL provided in the terminal (usually http://localhost:5173 or http://localhost:3000).
+
+📂 Project Highlights
+Logic: Implemented JSON.stringify and JSON.parse to bridge React state with the browser's Local Storage.
+
+Lifecycle: Used useEffect to synchronize data fetching on the initial component mount.
+
+UI/UX: Focused on a minimalist design to reduce cognitive load while logging moods.
