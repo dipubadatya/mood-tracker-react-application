@@ -1,31 +1,4 @@
-// import { createContext, useContext, useState, useEffect } from 'react';
 
-// const MoodContext = createContext();
-
-// export const MoodProvider = ({ children }) => {
-//   const [entries, setEntries] = useState(() => {
-//     const saved = localStorage.getItem('mood_logs');
-//     const deleteEntry = (id) => {
-//   setEntries(prev => prev.filter(entry => entry.id !== id));
-// };
-//     return saved ? JSON.parse(saved) : [];
-    
-//   });
-
-//   useEffect(() => {
-//     localStorage.setItem('mood_logs', JSON.stringify(entries));
-//   }, [entries]);
-
-//   const addEntry = (entry) => setEntries([entry, ...entries]);
-
-//   return (
-//     <MoodContext.Provider value={{ entries, addEntry }}>
-//       {children}
-//     </MoodContext.Provider>
-//   );
-// };
-
-// export const useMood = () => useContext(MoodContext);
 
 import { createContext, useContext, useState, useEffect, useCallback } from "react";
 
